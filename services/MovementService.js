@@ -13,4 +13,4 @@ module.exports = {
     const UserMovements = user.movements;
     return UserMovements;
   },
-}
+};
