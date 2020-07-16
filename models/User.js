@@ -2,7 +2,7 @@
 /* eslint-disable func-names */
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
-const { postSchema } = require('./Post');
+const { movementSchema } = require('./Movement');
 
 const SALT_WORK_FACTOR = 10;
 
@@ -34,7 +34,7 @@ const userSchema = new Schema({
     required: true,
     trim: true,
   },
-  posts: [postSchema],
+  movements: [movementSchema],
 }, {
   timestamps: true,
   versionKey: false,
