@@ -23,6 +23,6 @@ const movementSchema = new Schema({
   },
 });
 
-const Movements = mongoose.model('Post', movementSchema);
+const Movements = mongoose.model('Movements', movementSchema);
 
 module.exports = { Movements, movementSchema };
