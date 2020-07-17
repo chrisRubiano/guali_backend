@@ -1,10 +1,10 @@
 /* eslint-disable indent */
 const User = require('./User');
 const { Post } = require('./Post');
-const Movements = require('./Movement');
+const { Movement } = require('./Movement');
 
 module.exports = {
     User,
     Post,
-    Movements,
+    Movement,
 };

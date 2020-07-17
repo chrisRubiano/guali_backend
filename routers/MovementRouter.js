@@ -3,18 +3,18 @@ const express = require('express');
 const router = express.Router();
 
 const { MovementValidator } = require('../validators');
-const { MovementCotroller } = require('../controllers');
+const { MovementController } = require('../controllers');
 
 router.post('/users/:idUser/movement',
-  MovementValidator.create, MovementCotroller.create);
+  MovementValidator.create, MovementController.create);
 
 router.get('/users/:idUser/movement',
-  MovementValidator.findAll, MovementCotroller.findAll);
+  MovementValidator.findAll, MovementController.findAll);
 
 router.get('/users/:idUser/movement/:idMovement',
-  MovementValidator.findOne, MovementCotroller.findOne);
+  MovementValidator.findOne, MovementController.findOne);
 
 router.delete('/users/:idUser/movement/:idMovement',
-  MovementValidator.deleteOne, MovementCotroller.deleteOne);
+  MovementValidator.deleteOne, MovementController.deleteOne);
 
 module.exports = router;

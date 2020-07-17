@@ -6,7 +6,10 @@ const movementSchema = new Schema({
   amount: {
     type: Number,
     required: true,
-    isExpense: { type: Boolean },
+  },
+  isExpense: {
+    type: Boolean,
+    required: true,
   },
   title: {
     type: String,
@@ -23,6 +26,6 @@ const movementSchema = new Schema({
   },
 });
 
-const Movements = mongoose.model('Movements', movementSchema);
+const Movement = mongoose.model('Movement', movementSchema);
 
-module.exports = { Movements, movementSchema };
+module.exports = { Movement, movementSchema };
