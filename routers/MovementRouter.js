@@ -5,7 +5,7 @@ const router = express.Router();
 const { MovementValidator } = require('../validators');
 const { MovementCotroller } = require('../controllers');
 
-router.post('/users/:idUser/movement',
+router.post('/movement',
   MovementValidator.create, MovementCotroller.create);
 
 router.get('/users/:idUser/movement',
