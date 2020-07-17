@@ -7,8 +7,9 @@ module.exports = {
     }),
     [Segments.BODY]: Joi.object().keys({
       amount: Joi.number().required(),
+      isExpense: Joi.boolean().required(),
       title: Joi.string().required(),
-      category: Joi.string(),
+      category: Joi.string().required(),
       date: Joi.date(),
     }),
   }),

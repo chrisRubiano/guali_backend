@@ -1,6 +1,6 @@
 const UserController = require('./UserController');
 const PostController = require('./PostController');
-const MovementController = require('./MovementCotroller');
+const MovementController = require('./MovementController');
 
 module.exports = {
   UserController,
