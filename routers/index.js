@@ -10,5 +10,6 @@ router.use(require('./AuthRouter'));
 // Private
 router.use(verifyToken);
 router.use(require('./PostRouter'));
+router.use(require('./MovementRouter'));
 
 module.exports = router;
